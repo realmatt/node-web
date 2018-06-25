@@ -34,7 +34,7 @@ hbs.registerHelper('screamIt',(text)=>{
     //var text1 = text.toUpperCase();
     //new String(text);
     return  text.toUpperCase();
-})
+});
 
 
 app.get('/', (req,res)=>{
