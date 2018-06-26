@@ -63,6 +63,16 @@ app.get('/about',(req,res)=>{
 
 });
 
+app.get('/projects',(req,res)=>{
+    // res.send('<h1>My Name is Matt</h1>');
+    res.render('projects.hbs',{
+        pageTitle:'Projects Page',
+        project1:'Project1 to Add New Project'
+     //    ,currentYear:new Date().getFullYear()
+    });
+ 
+ });
+
 app.get('/bad',(req,res)=>{
     res.send({
         errorCode:400,
